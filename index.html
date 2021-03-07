@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>League Predictor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/css/bootstrap-table.min.css">
+        <link rel="stylesheet" href="libs/css/index.css">
+    </head>
+    <body>
+        <header>
+            <h3>Premier League Predictor</h3>
+        </header>
+        <main>
+            <div id="left">
+                <section>
+                    <div class="homeName">
+                        <label for="weekSelector">Choose your Week:</label>
+                    </div>
+                    <div class="double">
+                        <select class="form-control" id="weekSelector"></select>
+                    </div>
+                </section>
+                <br>
+                <div id="loadFixtures"></div>            
+            </div>
+            <div id="right">
+                <div id="dataSpan"></div>
+                <div class="buttonBox">
+                    <button id="resetButton" class="btn">Reset</button>
+                </div>
+            </div>
+            
+        </main>
+        
+        <!-- preloader -->
+        <div id="preloader"></div>
+
+        <script src="libs/js/jquery-3.5.1.min.js"></script>
+        <script src="libs/js/bootstrap.js"></script>
+        <script src="libs/js/bootstrap-table.min.js"></script>
+        <script src="libs/js/index.js" type="module"></script>
+    </body>
+</html>
